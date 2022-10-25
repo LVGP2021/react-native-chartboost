@@ -197,6 +197,16 @@ public class RNChartboostModule extends ReactContextBaseJavaModule {
   public void hasInterstitial(String location, final Callback callback) {
     callback.invoke(Chartboost.hasInterstitial(location));
   }
+  
+  @ReactMethod
+  public void showRewardedVideo(String location) {
+    Chartboost.showRewardedVideo(location);
+  }
+
+  @ReactMethod
+  public void cacheRewardedVideo(String location) {
+    Chartboost.cacheRewardedVideo(location);
+  }
 
   public void addToUILog(final String message) {
     System.out.println(message);
